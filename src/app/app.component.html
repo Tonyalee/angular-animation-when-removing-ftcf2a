@@ -1,0 +1,11 @@
+<hello name="{{ name }}"></hello>
+
+<button (click)="add()">Add</button>
+&nbsp;
+<button (click)="remove()">Remove</button>
+<hr>
+<div id="wrapper">
+<div (click)="removeThis(i)" [@simpleFadeAnimation]="'in'" class="box" *ngFor="let one of data; let i = index">
+  {{ one }}
+</div>
+</div>
